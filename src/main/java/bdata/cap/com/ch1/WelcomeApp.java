@@ -12,16 +12,28 @@ public class WelcomeApp {
                         .getName());
             }
         });
+        Thread welcomeThread3 = new Thread() {
+            @Override
+            public void run() {
+                System.out.printf("5.Welcome! I'm %s.%n", Thread.currentThread()
+                        .getName());
+            }
+        };
+
+
         Thread welcomeTask = new Thread(new WelcomeTask());
 
         // 启动线程
         welcomeThread.start();
         welcomeThread2.start();
+        welcomeThread3.start();
         welcomeTask.start();
+
         // 等待线程结束
-        welcomeThread.join();
-        welcomeThread2.join();
-        welcomeTask.join();
+//        welcomeThread.join();
+//        welcomeThread2.join();
+//        welcomeThread3.join();
+//        welcomeTask.join();
 
         // 输出“当前线程”的线程名称
         System.out.printf("1.Welcome! I'm %s.%n", Thread.currentThread().getName());
