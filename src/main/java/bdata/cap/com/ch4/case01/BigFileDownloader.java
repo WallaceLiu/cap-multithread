@@ -12,8 +12,8 @@ http://www.broadview.com.cn/31065
 */
 package bdata.cap.com.ch4.case01;
 
-import io.github.viscent.mtia.util.Debug;
-import io.github.viscent.mtia.util.Tools;
+import bdata.cap.com.util.Debug;
+import bdata.cap.com.util.Tools;
 
 import java.net.HttpURLConnection;
 import java.net.URL;

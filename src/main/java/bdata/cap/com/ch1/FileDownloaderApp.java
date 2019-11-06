@@ -68,8 +68,7 @@ public class FileDownloaderApp {
         private void downloadFile(URL url, OutputStream outputStream, int bufSize)
                 throws MalformedURLException, IOException {
             // 建立HTTP连接
-            final HttpURLConnection httpConn = (HttpURLConnection) url
-                    .openConnection();
+            final HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
             httpConn.setRequestMethod("GET");
             ReadableByteChannel inChannel = null;
             WritableByteChannel outChannel = null;
