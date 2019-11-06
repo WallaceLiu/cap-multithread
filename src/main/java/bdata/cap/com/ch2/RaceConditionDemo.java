@@ -2,6 +2,12 @@ package bdata.cap.com.ch2;
 
 import bdata.cap.com.util.Tools;
 
+/**
+ * 竞态
+ *
+ * @author: liuning11
+ * @date: 2019-11-06
+ */
 public class RaceConditionDemo {
 
     public static void main(String[] args) {

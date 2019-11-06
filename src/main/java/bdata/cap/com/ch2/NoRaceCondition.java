@@ -1,5 +1,11 @@
 package bdata.cap.com.ch2;
 
+/**
+ * 非竞态
+ *
+ * @author: liuning11
+ * @date: 2019-11-06
+ */
 public class NoRaceCondition {
 
     /**
